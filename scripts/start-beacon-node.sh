@@ -64,6 +64,8 @@ exec lighthouse \
 	--http-address 0.0.0.0 \
 	--execution-endpoint $EXECUTION_ENDPOINT \
 	--execution-jwt /root/jwttoken/jwtsecret.hex \
+	--disable-deposit-contract-sync \
+	--reconstruct-historic-states \
 	$METRICS_PARAMS \
 	$GRAFFITI_PARAM \
 	$ETH1_FLAG \
