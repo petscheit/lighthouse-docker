@@ -30,10 +30,8 @@ services:
             - 30303:30303/udp
             - 30304:30304/udp
             - 30304:30304/tcp
-            - 8545:8545
         expose:
             - 8551
-            - 8545
         env_file: .env
         command: /root/scripts/start-geth.sh
         restart: on-failure
